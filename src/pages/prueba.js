@@ -1,11 +1,11 @@
 import React, { Component } from "react"
-import header from "../components/header"
+import Header from "../components/header"
 
 class Prueba extends Component {
   render() {
     return (
       <div>
-        <header />
+        <Header />
         soy una prueba
       </div>
     )

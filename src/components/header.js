@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
+import './header.scss'
 import React from "react"
 
 const Header = ({ siteTitle }) => (
@@ -9,14 +10,8 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+    <div className={'container'}>
+      <h1 className={'link'}>
         <Link
           to="/"
           style={{
@@ -24,7 +19,18 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          Pagina 1
+        </Link>
+      </h1>
+      <h1 className={'link'}>
+        <Link
+          to="/prueba"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Pagina 2
         </Link>
       </h1>
     </div>
