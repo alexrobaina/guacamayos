@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import PropTypes from 'prop-types'
 import c from 'classnames'
-import styles from './header.scss'
+import styles from './header.module.scss'
 import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 
@@ -12,9 +12,7 @@ const Header = () => {
       logo: file(relativePath: { eq: "logo.png" }, id: {}) {
         id
         childImageSharp {
-          fixed (
-            width: 100
-           ){
+          fixed(width: 100) {
             ...GatsbyImageSharpFixed
           }
           fluid {
@@ -27,35 +25,32 @@ const Header = () => {
   console.log(data)
   return (
     <header>
-      <nav className={'containerNavbar'}>
-        <div className="logo">
-          <Img fixed={data.logo.childImageSharp.fixed} />
-        </div>
-        <div className={'link'}>
-          <Link spy={true} smooth={true} duration={500} to="services">
-            Servicios
-          </Link>
-        </div>
-        <div className={'link'}>
-          <Link spy={true} smooth={true} duration={500} to="about">
-            Nosotros
-          </Link>
-        </div>
-        <div className={'link'}>
-          <Link spy={true} smooth={true} duration={500} to="portfolio">
-            Portfolio
-          </Link>
-        </div>
-        <div className={'link'}>
-          <Link spy={true} smooth={true} duration={500} to="videos">
-            Videos
-          </Link>
-        </div>
-        <div className={'link'}>
-          <Link spy={true} smooth={true} duration={500} to="contact">
-            Contacto
-          </Link>
-        </div>
+      <div className={styles.logo}>
+        <Img fixed={data.logo.childImageSharp.fixed} />
+      </div>
+      <nav className={styles.containerNavbar}>
+        <ul className={styles.navLinks}>
+          <li className={styles.navLinksLi}>
+            <Link spy={true} smooth={true} duration={500} to="services">
+              Servicios
+            </Link>
+          </li>
+          <li className={styles.navLinksLi}>
+            <Link spy={true} smooth={true} duration={500} to="services">
+              Servicios
+            </Link>
+          </li>
+          <li className={styles.navLinksLi}>
+            <Link spy={true} smooth={true} duration={500} to="services">
+              Servicios
+            </Link>
+          </li>
+          <li className={styles.navLinksLi}>
+            <Link spy={true} smooth={true} duration={500} to="services">
+              Servicios
+            </Link>
+          </li>
+        </ul>
       </nav>
     </header>
   )
