@@ -1,0 +1,53 @@
+.icons {
+  width: 50px !important;
+}
+
+.card {
+  border-radius: 10px;
+  font-size: 0.875rem;
+  font-weight: 400px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  font-family: 'Cormorant Garamond', serif;
+  color: #4f4621;
+}
+
+.center-flex {
+  display: flex;
+  justify-content: center;
+}
+.card-servicios {
+  min-height: 400px;
+}
+
+.icons-padding {
+  padding: 55px 55px 42px;
+}
+
+.card-body h5 {
+  font-size: 18px !important;
+  letter-spacing: 1px;
+}
+
+.card-text {
+  margin-top: 25px;
+}
+
+.title-services {
+  text-transform: uppercase;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.btn-services {
+  margin-top: 35px;
+}
+
+.btn-info {
+  color: #03a9f4 !important;
+  text-transform: uppercase;
+  background-color: transparent !important;
+  border: none !important;
+}
