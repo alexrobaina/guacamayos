@@ -67,7 +67,7 @@ class Services extends Component {
               return (
                 <div className="col-xs-12 col-md-4">
                   <div className={c(styles.card, styles.cardServicios, styles.mTop50)}>
-                    <div className={c(styles.centerFlex styles.iconsPadding)}>
+                    <div className={c(styles.centerFlex, styles.iconsPadding)}>
                       <img
                         className={c(styles.icons, "card-img-top")}
                         src={serv.image}
@@ -75,9 +75,9 @@ class Services extends Component {
                       />
                     </div>
                     <div className={c(styles.card-body, "card-body")}>
-                      <h5 className={c(styles.cardTitle styles.titleServices)}>{serv.title}</h5>
+                      <h5 className={c(styles.cardTitle, styles.titleServices)}>{serv.title}</h5>
                       <p className={c(styles.cardText)}>{serv.text}</p>
-                      <div className={c(styles.centerFlex styles.btnDervices)}>
+                      <div className={c(styles.centerFlex, styles.btnDervices)}>
                         <button href="#" className={c(styles.btnInfo, "btn")}>
                           Info
                         </button>
