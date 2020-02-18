@@ -8,7 +8,7 @@
     height: 25px;
 }
 
-.nav-link  {
+.navLink  {
     padding-left: 25px!important;
     padding-right: 25px!important;
     color: #4f4621;
@@ -16,12 +16,12 @@
     text-transform: uppercase;
     padding: 10px 30px;
     font-family: 'Cormorant Garamond',serif;
+    cursor: pointer;
 }
 
-.bg-light {
+.bgLight {
     background-color: rgb(252, 252, 252)!important;
     box-shadow: 0 2px 10px 1px rgba(0,0,0,.14), 0 0px 0px -10px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.12);
-    
 }
 
 .collapse {
@@ -32,11 +32,11 @@
         display: flex;
         justify-content: center!important;
     }
-    .navbar-nav {
+    .navbarNav {
         margin-top: 25px;
     }
 
-    .nav-link  {
+    .navLink  {
         padding-left: 25px!important;
         padding-right: 25px!important;
         padding-bottom: 25px!important;

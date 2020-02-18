@@ -31,11 +31,11 @@ const Header = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="justify-center">
-            <div className="navbar-nav">
+        <div className={c(styles.collapse, "collapse navbar-collapse")}>
+          <div className={c(styles.collapse, "justify-center")}>
+            <div className={c(styles.navbarNav, "navbar-nav")}>
               <Link
-                className="nav-item nav-link"
+                className={c(styles.navLink, styles.navItem, "nav-item", "nav-link")}
                 activeClass="active"
                 to="servicios"
                 spy={true}
@@ -43,11 +43,10 @@ const Header = () => {
                 offset={-70}
                 duration={500}
               >
-                servicios
+                Servicios
               </Link>
-
               <Link
-                className="nav-item nav-link"
+                className={c(styles.navLink, styles.navItem, "nav-item", "nav-link")}
                 activeClass="active"
                 to="nosotros"
                 spy={true}
@@ -57,9 +56,8 @@ const Header = () => {
               >
                 Nosotros
               </Link>
-
               <Link
-                className="nav-item nav-link"
+                className={c(styles.navLink, styles.navItem, "nav-item", "nav-link")}
                 activeClass="active"
                 to="portfolio"
                 spy={true}
@@ -71,7 +69,7 @@ const Header = () => {
               </Link>
 
               <Link
-                className="nav-item nav-link"
+                className={c(styles.navLink, styles.navItem, "nav-item", "nav-link")}
                 activeClass="active"
                 to="video"
                 spy={true}
@@ -83,7 +81,7 @@ const Header = () => {
               </Link>
 
               <Link
-                className="nav-item nav-link"
+                className={c(styles.navLink, styles.navItem, "nav-item", "nav-link")}
                 activeClass="active"
                 to="contacto"
                 spy={true}
