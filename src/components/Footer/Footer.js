@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './footer.module.scss'
+import styles from './footer.scss'
 
 const Footer = () => (
     <footer className={styles.footer}>
         © {new Date().getFullYear()}, Creado por
-        <a href="http://www.alexrobaina.com"> Alex robaina y </a><a href="http://www.alexrobaina.com">Lali miramon</a>
+        <a className={styles.linkAlex} href="http://www.alexrobaina.com"> Alex robaina</a> y <a className={styles.linkLali} href="http://www.alexrobaina.com"> Lali miramon</a>
     </footer>
 )
 

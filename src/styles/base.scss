@@ -1,0 +1,96 @@
+@import "fonts";
+@import "variables";
+@import "mixings";
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ol,
+ul,
+li,
+p {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+:global {
+  .containerClients,
+  .containerDevelopers {
+    @include media-breakpoint-only(xl) {
+      width: 1390px;
+      min-width: 1390px;
+      max-width: 1390px;
+    }
+
+    @include media-breakpoint-only(lg) {
+      width: 1190px;
+      min-width: 1190px;
+      max-width: 1190px;
+    }
+
+    @include media-breakpoint-only(md) {
+      width: 965px;
+      min-width: 950px;
+      max-width: 950px;
+    }
+
+    @include media-breakpoint-only(sm) {
+      width: 720px;
+      min-width: 720px;
+      max-width: 720px;
+    }
+
+    @include media-breakpoint-only(xs) {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+    }
+  }
+
+  .containerClients {
+    margin-left: auto;
+    padding-right: 54px;
+
+    @include site-font();
+  }
+
+  .containerDevelopers {
+    margin-right: auto;
+    padding-right: 54px;
+
+    @include site-font('devs');
+  }
+
+  .visibleDesktop {
+    @include media-breakpoint-only(xs) {
+      display: none;
+    }
+
+    @include media-breakpoint-only(sm) {
+      display: none;
+    }
+  }
+
+  .visibleMobile {
+    @include media-breakpoint-only(lg) {
+      display: none;
+    }
+
+    @include media-breakpoint-only(md) {
+      display: none;
+    }
+  }
+}
