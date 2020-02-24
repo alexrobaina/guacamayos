@@ -5,47 +5,47 @@
 .card {
   border-radius: 10px;
   font-size: 0.875rem;
-  font-weight: 400px;
+  font-weight: 400;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
   font-family: 'Cormorant Garamond', serif;
   color: #4f4621;
 }
 
-.center-flex {
+.centerFlex {
   display: flex;
   justify-content: center;
 }
-.card-servicios {
+.cardServicios {
   min-height: 400px;
 }
 
-.icons-padding {
+.iconsPadding {
   padding: 55px 55px 42px;
 }
 
-.card-body h5 {
+.cardBody h5 {
   font-size: 18px !important;
   letter-spacing: 1px;
 }
 
-.card-text {
+.cardText {
   margin-top: 25px;
 }
 
-.title-services {
+.titleServices {
   text-transform: uppercase;
 }
 
-.card-title {
+.cardTitle {
   text-align: center;
 }
 
-.btn-services {
+.btnServices {
   margin-top: 35px;
 }
 
-.btn-info {
+.btnInfo {
   color: #03a9f4 !important;
   text-transform: uppercase;
   background-color: transparent !important;
